@@ -1,0 +1,179 @@
+.h0 {
+    font-size: 2.65rem;
+}
+
+.round-input {
+    padding: 0.375rem 0.95rem !important;
+    border-radius: 20px;
+}
+
+.round-button {
+    border-radius: 10px;
+}
+
+.red-button {
+    background-color: $red;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    font-weight: 900;
+    border: solid darken($red, 10%);
+    border-width: thin;
+}
+
+.red-button:hover {
+    background-color: darken($red, 10%);
+}
+
+.hanging-items {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all 0.75s ease-in-out;
+
+    img {
+        height: 300px;
+    }
+
+    .crane {
+        position: absolute;
+        top: 0;
+        transition: all 0.75s ease-in-out;
+    }
+
+    .item1 {
+        right: 45%;
+        animation-duration: 2.5s;
+    }
+}
+
+.header-nav {
+    width: 100%;
+}
+
+body.default {
+
+     background-image: url('../../public/images/auth-screen.png');
+    .hanging-items {
+        display: none !important;
+    }
+}
+
+body.quiz-in-progress {
+
+    background-image: url("../../public/images/quiz-in-progress.png");
+    .hanging-items {
+        display: block !important;
+    }
+}
+
+body.quiz-complete {
+
+    background-image: url("../../public/images/quiz-complete.png");
+    .hanging-items {
+        display: none !important;
+    }
+}
+
+body.puzzle-in-progress {
+
+     background-image: url("../../public/images/puzzle-in-progress.png");
+    .hanging-items {
+        display: block !important;
+    }
+}
+
+body.puzzle-complete {
+
+     background-image: url("../../public/images/puzzle-complete.png");
+    .hanging-items {
+        display: none !important;
+    }
+}
+
+body.present-in-progress {
+
+    background-image: url("../../public/images/present-in-progress.png");
+    .hanging-items {
+        display: block !important;
+    }
+}
+
+body.present-complete {
+
+     background-image: url("../../public/images/present-complete.png");
+    .hanging-items {
+        display: none !important;
+    }
+}
+
+.custom-modal{
+    text-align: center;
+    .modal-header{
+        color: #000;
+        border-bottom: none;
+    }
+    .modal-body{
+        padding-bottom: 0!important;
+        color: #000;
+    }
+    .modal-footer{
+        border-top: none;
+        button,a{
+            margin: 0 auto;
+        }
+    }
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.fade-enter {
+    opacity: 0
+}
+
+.conf-dialog{
+    
+    .dg-main-content{
+        border-radius: 0.3rem;
+        padding: 1rem;
+
+        .dg-content-body{
+            border-bottom:none;
+            padding-bottom: 0px;
+
+            .dg-content{
+                margin-bottom: 0.5rem;
+                color: #000;
+                text-align: center;
+            }
+        }
+
+        .dg-content-footer{
+            text-align: center;
+            padding: 1rem 0 0;
+        }
+
+        .dg-btn{
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #fff!important;
+            background-color: #c82027;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            font-size: 20px;
+            font-weight: 900;
+            border: solid #9c191e;
+            border-width: thin;
+            border-radius: 10px;
+        }
+    }
+}

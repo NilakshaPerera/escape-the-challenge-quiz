@@ -1,0 +1,85 @@
+// Fonts
+@import 'font';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Components
+@import 'components';
+@import 'util';
+@import 'auth';
+@import 'timer';
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar {
+    position: fixed;
+}
+
+body {
+    background-color: #616a7c;
+    font-family: 'Avenir Next LT Pro';
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    overflow: hidden;
+    transition: background 0.75s ease-in-out;
+}
+
+#app {
+    height: 100vh;
+}
+
+.auth-box {
+    height: 100vh;
+    .box {
+        .inner-box{
+            min-height: 340px;
+        }
+        width: 800px;
+    }
+    .form-element {
+        margin: 0 25%;
+    }
+}
+
+.file-upload {
+	position: relative;
+    display: inline-block;
+    
+    .file-upload__label {
+        display: block;
+        padding: 1em 2em;
+        color: #fff;
+        background: #222;
+        border-radius: .4em;
+        transition: background .3s;
+
+        &:hover {
+           cursor: pointer;
+           background: #000;
+        }
+      }
+          
+      .file-upload__input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 1;
+          width:0;
+          height: 100%;
+          opacity: 0;
+      }
+}
+
+
